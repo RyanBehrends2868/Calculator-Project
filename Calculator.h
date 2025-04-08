@@ -15,7 +15,7 @@ public:
     double settingInitialGuessPeriods;
     double settingErrorThreshold;
     // Constructor with defaults
-    Calculator(bool radianMode = true, bool saveHistory = false, int taylorTerms = 10, double initialGuessInterest = .05, double initialGuessPeriods = 10, double errorThreshold = 1e-28);
+    Calculator(bool radianMode = true, bool saveHistory = false, int taylorTerms = 10, double initialGuessInterest = .05, double initialGuessPeriods = 10, double errorThreshold = 1e-10);
 
     double evaluateExpression(const std::string& inputExpression) const; // tokenize -> convertToRPN -> evaluateRPN
 
